@@ -3,8 +3,8 @@ const fs = require('fs');
 const getImageFileType = async (image) => {
   const determineHeader = () => new Promise((resolve, reject) => {
     try {
-      const file = fs.readFileSync(image.path, null).buffer;
-      const arr = (new Uint8Array(file)).subarray(0, 4);
+      const file = fs.readFileSync(image.path);
+      const arr = file.subarray(0, 4);
       const header = arr.reduce((result, byte) => result + byte.toString(16), '');
       resolve(header);
     } catch (error) {
