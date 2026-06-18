@@ -1,0 +1,8 @@
+node_modules/
+.env
+.DS_Store
+public/uploads/*
+!public/uploads/.gitkeep
+!public/uploads/sample-bike.svg
+!public/uploads/sample-desk.svg
+!public/uploads/default-avatar.svg

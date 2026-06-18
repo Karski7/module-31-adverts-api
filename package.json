@@ -1,0 +1,29 @@
+{
+  "name": "module-31-adverts-api",
+  "version": "1.0.0",
+  "description": "Kodilla module 31 adverts backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "serve": "node server.js",
+    "check": "node --check server.js && node --check src/app.js && node --check src/controllers/ads.controller.js && node --check src/controllers/auth.controller.js",
+    "smoke": "node scripts/smoke-test.js"
+  },
+  "keywords": [],
+  "author": "Ruslan Karski",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "connect-mongo": "^6.0.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongodb-memory-server": "^11.2.0",
+    "mongoose": "^9.7.1",
+    "multer": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
